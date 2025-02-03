@@ -14,6 +14,14 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+.click-here{
+    position: absolute;
+    left: 30vw;
+    top: 20vh;
+    pointer-events: none;
+    font-size: 30px;
+    color: #ef9a9a;
+}
 #container {
   width: 60%;
   margin: auto;

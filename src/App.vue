@@ -115,7 +115,7 @@ onMounted(() => {
       },
       { text: "We're getting married!", y: 40, x: posX, duration: 4000 },
       {
-        text: "9 April 2025",
+        text: "April 9th, 2025",
         y: 20,
         x: posX,
         color: "#d62626",
@@ -199,6 +199,9 @@ onMounted(() => {
 </script>
 
 <template>
+  <!-- <div class="click-here">
+    <span>Click me</span>
+  </div> -->
   <div class="v-center"></div>
   <div id="container">
     <div class="book">
