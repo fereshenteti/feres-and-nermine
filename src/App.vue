@@ -51,14 +51,6 @@ onMounted(() => {
         delay: 1000,
         duration: 4500,
       },
-      //   {
-      //     text: ".... and now we're beginning our new adventure",
-      //     id: "end",
-      //     color: "#3f51b5",
-      //     delay: 1000,
-      //     x: posX,
-      //     duration: 4500,
-      //   },
     ],
     {
       strokeWidth: 2,
@@ -76,7 +68,7 @@ onMounted(() => {
         textAlign: "right",
         delay: 500,
         y: 20,
-        x: -40,
+        x: winWidth < 700 ? 10 : -40,
         duration: 1500,
         fontSize: fontSize.small,
       },
@@ -109,13 +101,13 @@ onMounted(() => {
         textAlign: "right",
         delay: 500,
         y: 20,
-        x: -40,
+        x: winWidth < 700 ? 10 : -40,
         duration: 1500,
         fontSize: fontSize.small,
       },
       { text: "We're getting married!", y: 40, x: posX, duration: 4000 },
       {
-        text: "April 9th, 2025",
+        text: "April 9th, 2025   5pm",
         y: 20,
         x: posX,
         color: "#d62626",
@@ -199,9 +191,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <!-- <div class="click-here">
-    <span>Click me</span>
-  </div> -->
   <div class="v-center"></div>
   <div id="container">
     <div class="book">
