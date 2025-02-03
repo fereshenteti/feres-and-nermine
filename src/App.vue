@@ -22,18 +22,18 @@ onMounted(() => {
   var posX = Math.max(80 * ratio, 50);
   document.body.style.fontSize = bodyFontSize + "px";
 
-  fontSize.small = Math.max(fontSize.small * ratio, 8);
-  fontSize.medium = Math.max(fontSize.medium * ratio, 10);
+  fontSize.small = Math.max(fontSize.small * ratio, winWidth < 700 ? 10 : 8);
+  fontSize.medium = Math.max(fontSize.medium * ratio, winWidth < 700 ? 12 : 10);
 
   vara[0] = new Vara(
     "#vara-container",
     SatisfySL,
     [
       {
-        text: "16 Jun 2021",
+        text: "9 Jun 2021",
         textAlign: "right",
         y: 20,
-        x: winWidth < 700 ? 10 : -40,
+        x: winWidth < 700 ? 0 : -40,
         delay: 500,
         duration: 1500,
         fontSize: fontSize.small,
@@ -48,6 +48,7 @@ onMounted(() => {
         text: "That day marked our destiny..",
         id: "sphinx",
         x: posX,
+        y: 20,
         delay: 1000,
         duration: 4500,
       },
@@ -64,23 +65,23 @@ onMounted(() => {
     SatisfySL,
     [
       {
-        text: "16 Jan 2019 -> Today",
+        text: "9 Jan 2019 -> Today",
         textAlign: "right",
         delay: 500,
         y: 20,
-        x: winWidth < 700 ? 10 : -40,
+        x: winWidth < 700 ? 0 : -40,
         duration: 1500,
         fontSize: fontSize.small,
       },
       {
-        text: "... and since that day, we were inseparable soulmates..",
+        text: "...and since that day, we were inseparable soulmates..",
         y: 40,
         x: posX,
         duration: 4000,
       },
       {
         text: "and here comes a new milestone in our adventure..",
-        y: 40,
+        y: 20,
         x: posX,
         duration: 3500,
       },
@@ -101,11 +102,11 @@ onMounted(() => {
         textAlign: "right",
         delay: 500,
         y: 20,
-        x: winWidth < 700 ? 10 : -40,
+        x: winWidth < 700 ? 0 : -40,
         duration: 1500,
         fontSize: fontSize.small,
       },
-      { text: "We're getting married!", y: 40, x: posX, duration: 4000 },
+      { text: "We're getting married!", y: 30, x: posX, duration: 4000 },
       {
         text: "April 9th, 2025   5pm",
         y: 20,
@@ -115,13 +116,13 @@ onMounted(() => {
       },
       {
         text: "Marassim wedding hall, Teniour km  10, Sfax, Tunisia",
-        y: 40,
+        y: 20,
         x: posX,
         duration: 3500,
       },
       {
         text: "Save the date!",
-        y: 40,
+        y: 20,
         x: posX,
         color: "#d62626",
         duration: 3500,
