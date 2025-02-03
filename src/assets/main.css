@@ -6,7 +6,7 @@ body {
   height: 100%;
 }
 body {
-  background: #fff4d3;
+  background: #fff4d3 !important;
   text-align: center;
   font-family: "Roboto", sans-serif;
   overflow: hidden;
@@ -48,7 +48,7 @@ body {
 .book .side {
   width: 3em;
   height: 40em;
-  background: #b36060;
+  background: #b36060 !important;
   position: absolute;
   left: -3em;
   top: 0;
@@ -58,7 +58,7 @@ body {
 .book .bottom {
   width: 25em;
   height: 3em;
-  background: #e2e2e2;
+  background: #e2e2e2 !important;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -80,7 +80,7 @@ body {
 .book .shadow {
   background: transparent;
   transform: translateZ(-3em);
-  box-shadow: -1em 1em 0px 0px #ccc3a9;
+  box-shadow: -1em 1em 0px 0px #ccc3a9 !important;
   z-index: 1;
 }
 .book .paper {
@@ -90,7 +90,7 @@ body {
   cursor: pointer;
 }
 .book .paper.open {
-  box-shadow: 2.2em 1em 0px 0px #ccc3a9;
+  box-shadow: 2.2em 1em 0px 0px #ccc3a9 !important;
   transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg);
 }
 .book .paper .page.front {
@@ -108,7 +108,7 @@ body {
   transform: translateZ(0px);
 }
 .book .first .page {
-  background: #ef9a9a;
+  background: #ef9a9a !important;
 }
 .book .first .page.front:after {
   position: absolute;
@@ -117,7 +117,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(160, 115, 115, 0.1);
+  background: rgba(160, 115, 115, 0.1) !important;
 }
 .book .intro .save-the-date{
     font-size: 1.4rem;
@@ -130,10 +130,10 @@ body {
 .book .paper .back {
   transition: transform 1s;
   transform-origin: 0 50%;
-  background: #e1e1e1;
+  background: #e1e1e1 !important;
 }
 .book .first.paper .back {
-  background: #ef9a9a;
+  background: #ef9a9a !important;
 }
 .book .intro {
   position: absolute;
@@ -141,7 +141,7 @@ body {
   width: calc(100% - 3em);
   height: 90%;
   height: calc(100% - 3em);
-  border: 2em solid #eee;
+  border: 2em solid #eee !important;
   left: 0;
   top: 0;
   right: 0;
@@ -151,7 +151,7 @@ body {
 .book .intro h2 {
   padding: 0.5em 0.5em;
   font-size: 2em;
-  color: #fff;
+  color: #fff !important;
   word-break: break-all;
   text-align: left;
   letter-spacing: 5px;
@@ -159,11 +159,11 @@ body {
 .book .intro h1 {
   padding: 0.5em 0.25em;
   font-size: 6em;
-  color: #fff;
+  color: #fff !important;
   word-break: break-all;
 }
 .book .paper:not(.first) .page {
-  background: #f1f1f1;
+  background: #f1f1f1 !important;
   background-image: linear-gradient(
       90deg,
       transparent 40px,
@@ -171,11 +171,11 @@ body {
       #abced4 42px,
       transparent 42px
     ),
-    linear-gradient(#e1e1e1 0.1em, transparent 0.1em);
+    linear-gradient(#e1e1e1 0.1em, transparent 0.1em) !important;
   background-size: 100% 1.5em;
 }
 .book .paper:not(.first) .back {
-  background: #e1e1e1;
+  background: #e1e1e1 !important;
 }
 .book .open.second .back {
   transform: translateZ(-1px);
@@ -216,7 +216,7 @@ body {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  color: #615858;
+  color: #615858 !important;
   letter-spacing: 2px;
   text-decoration: none;
 }
