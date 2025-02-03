@@ -30,7 +30,7 @@ onMounted(() => {
     SatisfySL,
     [
       {
-        text: "9 Jun 2021",
+        text: "6 Jun 2021",
         textAlign: "right",
         y: 20,
         x: winWidth < 700 ? -30 : -50,
@@ -65,7 +65,7 @@ onMounted(() => {
     SatisfySL,
     [
       {
-        text: "9 Jan 2019 -> Today",
+        text: "6 Jun 2021 -> Today",
         textAlign: "right",
         delay: 500,
         y: 20,
