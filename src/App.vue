@@ -175,8 +175,9 @@ onMounted(() => {
         <div class="page front contents">
           <div class="intro">
             <h2>Feres</h2>
-            <h2>& Nermine</h2>
-            <h1>👰‍♀️🤵🏻</h1>
+            <h2>&</h2>
+            <h2>Nermine</h2>
+            <h1>👰🏻‍♀️🤵🏻</h1>
             <h2 class="save-the-date">Save the</h2>
             <h2 class="save-the-date">date <span class="ring">💍</span></h2>
           </div>

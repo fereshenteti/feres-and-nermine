@@ -117,7 +117,7 @@ body {
 .book .first .page {
   background: #ef9a9a !important;
 }
-.book .first .page.front:after {
+/* .book .first .page.front:after {
   position: absolute;
   content: "";
   width: 50%;
@@ -125,9 +125,9 @@ body {
   left: 0;
   top: 0;
   background: rgba(160, 115, 115, 0.1) !important;
-}
+} */
 .book .intro .save-the-date{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-top: -15px;
 }
@@ -154,14 +154,18 @@ body {
   right: 0;
   bottom: 0;
   margin: auto;
+  padding-top: 1rem;
 }
 .book .intro h2 {
-  padding: 0.5em 0.5em;
+  padding: 0 0.5em;
+  margin: -1rem 0;
   font-size: 2em;
   color: #fff !important;
   word-break: break-all;
   text-align: left;
   letter-spacing: 5px;
+  font-family: cursive;
+  font-size: 30px;
 }
 .book .intro h1 {
   padding: 0.5em 0.25em;
