@@ -147,30 +147,6 @@ onMounted(() => {
           vara[ix].playAll();
           vara[ix].animationEnd(function (i, o) {
             played[ix] = 1;
-            if (i == "link") {
-              var group = o.container;
-              var rect = document.createElementNS(
-                "http://www.w3.org/2000/svg",
-                "rect"
-              );
-              rect.setAttribute("x", 0);
-              rect.setAttribute("y", 0);
-              rect.setAttribute(
-                "width",
-                o.container.getBoundingClientRect().width
-              );
-              rect.setAttribute(
-                "height",
-                o.container.getBoundingClientRect().height
-              );
-              rect.setAttribute("fill", "transparent");
-              group.appendChild(rect);
-              rect.style.cursor = "pointer";
-              rect.addEventListener("click", function () {
-                console.log(true);
-                document.querySelector("#link").click();
-              });
-            }
           });
         }
       });

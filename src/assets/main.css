@@ -215,14 +215,6 @@ body {
   height: 100%;
   padding: 1em;
 }
-#link {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  color: #615858 !important;
-  letter-spacing: 2px;
-  text-decoration: none;
-}
 
 .page-back-photo{
   width: 100%;
@@ -247,5 +239,57 @@ body {
 @media (max-width: 400px) {
     #container{
         transform: scale(0.7);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #fff4d3 !important;
+    }
+    .book .side {
+        background: #b36060 !important;
+    }
+    .book .bottom {
+        background: #e2e2e2 !important;
+    }
+    .book .shadow {
+        box-shadow: -1em 1em 0px 0px #ccc3a9 !important;
+    }
+    .book .paper.open {
+        box-shadow: 2.2em 1em 0px 0px #ccc3a9 !important;
+    }
+    .book .first .page {
+        background: #ef9a9a !important;
+    }
+    .book .paper .back {
+        transition: transform 1s;
+        transform-origin: 0 50%;
+        background: #e1e1e1 !important;
+    }
+    .book .first.paper .back {
+        background: #ef9a9a !important;
+    }
+    .book .intro {
+        border: 2em solid #eee !important;
+    }
+    .book .intro h2 {
+        color: #fff !important;
+    }
+    .book .intro h1 {
+        color: #fff !important;
+    }
+    .book .paper:not(.first) .page {
+        background: #f1f1f1;
+        background-image: linear-gradient(
+            90deg,
+            transparent 40px,
+            #abced4 40px,
+            #abced4 42px,
+            transparent 42px
+        ),
+        linear-gradient(#e1e1e1 0.1em, transparent 0.1em) !important;
+    }
+    .book .paper:not(.first) .back {
+        background: #e1e1e1 !important;
     }
 }
