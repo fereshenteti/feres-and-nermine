@@ -10,28 +10,12 @@ const photo3 = new URL("/src/assets/photo3.png", import.meta.url).href;
 onMounted(() => {
   /* ******************************** */
 
-  var bro = document.getElementById("browser_agent");
-  if (bro) {
-    bro.style.backgroundColor = "black";
-    bro.style.color = "white";
-    console.log("bro:", bro);
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      bro.innerHTML = "Your browser is forcing dark mode!!!";
-    } else {
-      bro.innerHTML = "Your browser is using light mode";
-    }
-  }
+  const bodyBgColor = window.getComputedStyle(document.body).backgroundColor;
 
   if (/SamsungBrowser/i.test(navigator.userAgent)) {
-    alert(
-      "Your browser is forcing dark mode. To fix this, go to:\n\nSamsung Internet Settings > Appearance > Turn OFF 'Force Dark Mode'."
-    );
     var bro = document.getElementById("browser_agent");
     if (bro) {
-      bro.innerHTML = "Your browser is forcing dark mode!!!";
+      bro.innerHTML = "body bg color: " + bodyBgColor;
       bro.style.backgroundColor = "black";
       bro.style.color = "white";
     }
