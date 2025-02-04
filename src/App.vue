@@ -8,21 +8,6 @@ const photo2 = new URL("/src/assets/photo2.png", import.meta.url).href;
 const photo3 = new URL("/src/assets/photo3.png", import.meta.url).href;
 
 onMounted(() => {
-  /* ******************************** */
-
-  const bodyBgColor = window.getComputedStyle(document.body).backgroundColor;
-
-  if (/SamsungBrowser/i.test(navigator.userAgent)) {
-    var bro = document.getElementById("browser_agent");
-    if (bro) {
-      bro.innerHTML = "body bg color: " + bodyBgColor;
-      bro.style.backgroundColor = "black";
-      bro.style.color = "white";
-    }
-  }
-
-  /* ******************************** */
-
   var SatisfySL =
     "https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json";
   var winWidth = window.innerWidth;
@@ -183,7 +168,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <span id="browser_agent"></span>
   <div class="v-center"></div>
   <div id="container">
     <div class="book">
