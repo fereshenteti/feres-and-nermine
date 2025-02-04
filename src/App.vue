@@ -8,6 +8,37 @@ const photo2 = new URL("/src/assets/photo2.png", import.meta.url).href;
 const photo3 = new URL("/src/assets/photo3.png", import.meta.url).href;
 
 onMounted(() => {
+  /* ******************************** */
+
+  var bro = document.getElementById("browser_agent");
+  if (bro) {
+    bro.style.backgroundColor = "black";
+    bro.style.color = "white";
+    console.log("bro:", bro);
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      bro.innerHTML = "Your browser is forcing dark mode!!!";
+    } else {
+      bro.innerHTML = "Your browser is using light mode";
+    }
+  }
+
+  if (/SamsungBrowser/i.test(navigator.userAgent)) {
+    alert(
+      "Your browser is forcing dark mode. To fix this, go to:\n\nSamsung Internet Settings > Appearance > Turn OFF 'Force Dark Mode'."
+    );
+    var bro = document.getElementById("browser_agent");
+    if (bro) {
+      bro.innerHTML = "Your browser is forcing dark mode!!!";
+      bro.style.backgroundColor = "black";
+      bro.style.color = "white";
+    }
+  }
+
+  /* ******************************** */
+
   var SatisfySL =
     "https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json";
   var winWidth = window.innerWidth;
@@ -168,6 +199,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <span id="browser_agent"></span>
   <div class="v-center"></div>
   <div id="container">
     <div class="book">

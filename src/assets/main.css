@@ -1,6 +1,10 @@
 :root {
     color-scheme: only light;
 }
+#browser_agent{
+    position: absolute;
+    left: 0;
+}
 html,
 body {
     height: 100%;
@@ -242,7 +246,7 @@ body {
     }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     body {
         background: #fff4d3 !important;
     }
@@ -292,4 +296,4 @@ body {
     .book .paper:not(.first) .back {
         background: #e1e1e1 !important;
     }
-}
+} */
